@@ -1,10 +1,6 @@
 package Array;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
-public class first {
-
+public class searchingarray {
     static int linearSearch(int[]arr,int target){
         int index=0;
         if (arr.length==0){
@@ -12,11 +8,11 @@ public class first {
         }
 
         for(int num:arr){
-         if(num==target){
-             return index;
-         }else {
-             index ++;
-         }
+            if(num==target){
+                return index;
+            }else {
+                index ++;
+            }
 
 
         }
@@ -31,6 +27,4 @@ public class first {
 
 
     }
-
-
 }
