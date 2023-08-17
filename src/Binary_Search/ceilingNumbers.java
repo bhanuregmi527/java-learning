@@ -26,6 +26,6 @@ public class ceilingNumbers {
                 return arr[mid];
             }
         }
-        return -1;
+        return arr[start];
     }
 }
