@@ -5,15 +5,35 @@ import java.util.Arrays;
 
 public class evenDigits {
     public static void main(String[] args) {
-        ArrayList<Integer> arr= new ArrayList<>();
-        int[] arrNum={1,4,5,8,10,11,16};
-        for (int i = 0; i <arrNum.length ; i++) {
-            if(arrNum[i]%2==0){
-                arr.add(arrNum[i]);
+        int[] arrNum={12,345,2,66,10,8296};
+        System.out.println(evenCount(arrNum));
+
+    }
+    static int evenCount(int[]arr){
+        int count=0;
+
+        for (int i = 0; i <arr.length ; i++) {
+            int digitCount=0;
+            if(arr[i]==0){
+                return 1;
+            } else  {
+                //length of digit by converting num into string and string.length()
+                String digitString= arr[i]+"";
+                digitCount=digitString.length();
+
+                // Length of digit by dividing and counting.
+//                while (arr[i]!=0){
+//                    arr[i]=arr[i]/10;
+//                    digitCount++;
+//                }
+
             }
+            if(digitCount%2==0){
+                count++;
+            }
+
         }
-        for (int num:arr){
-            System.out.println(num);
-        }
+        return count;
+
     }
 }
