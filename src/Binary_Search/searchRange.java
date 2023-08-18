@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class searchRange {
+ //Searching for start and end index of array
     public static void main(String[] args) {
         int[]nums={5,7,7,7,7,8,8,10};
         int target=7;
