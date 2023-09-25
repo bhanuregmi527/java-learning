@@ -1,6 +1,6 @@
 package oop.interfaces;
 
-public class Car implements  Engine,Brake {
+public class Car implements  Engine,Brake,Media {
 
     @Override
     public void start() {
