@@ -3,7 +3,7 @@ package recursion;
 public class fiboRecursion {
 
     public static void main(String[] args) {
-        int num=fibo(6);
+        int num=fibo(50);
         System.out.println(num);
     }
 static int  fibo(int n){
